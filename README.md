@@ -1,6 +1,8 @@
 # Ansible.fast-k3s
 
 TBD   
+   
+> this playbook was tested on centos 7.7.   
 
 # This doc is draft.
    
@@ -56,3 +58,8 @@ $ ansible-playbook -i inventory deploy-k3s.yml -t vm
 ```bash
 $ ansible-playbook -i inventory deploy-k3s.yml -t k3s
 ```
+   
+# Known Issue
+* `Ubuntu` 
+Setting the network with vmware_guest in Ubuntu 18.04 (and latest) is known to be broken, due to missing support for `netplan` in the `open-vm-tools`.   
+[https://docs.ansible.com/ansible/latest/scenario_guides/vmware_scenarios/vmware_troubleshooting.html](https://docs.ansible.com/ansible/latest/scenario_guides/vmware_scenarios/vmware_troubleshooting.html)    
