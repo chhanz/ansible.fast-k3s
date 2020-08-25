@@ -36,7 +36,11 @@
     ```
 
 ## variable 'virtual machine"
-
+* Select VM Template   
+```console
+vm_template: "c7.7-template"
+```
+   
 * Change Static IP Address    
 ```console
 vm_netmask: "255.255.255.0"

@@ -6,7 +6,7 @@
     password: "{{ vcenter_pass }}"
     validate_certs: False
     name: k3s-{{ vm_ipaddr | replace('.','-') }}
-    template: c7.7-template
+    template: "{{ vm_template }}"
     datacenter: "{{ datacenter_name }}"
     folder: /{{ datacenter_name }}/vm
     cluster: "{{ cluster_name }}"
