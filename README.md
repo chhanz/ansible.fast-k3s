@@ -38,7 +38,7 @@ vm_dns: "1.1.1.1"
 [nodes:vars]
 ansible_ssh_user=root
 ansible_ssh_pass=password
-ansible_ssh_common_args: '-o StrictHostKeyChecking=no'
+ansible_ssh_common_args="-o GlobalKnownHostsFile=/dev/null -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no"
 ```
    
 * deploy lab environment 'k3s'
