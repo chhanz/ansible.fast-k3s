@@ -44,6 +44,9 @@ ansible_ssh_pass=password
 ansible_ssh_common_args="-o GlobalKnownHostsFile=/dev/null -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no"
 ```
    
+> Warning)    
+> ***if install k3s, system will rebooted.***   
+   
 * deploy lab environment 'k3s'
 ```bash
 $ ansible-playbook -i inventory deploy-k3s.yml 
@@ -63,3 +66,7 @@ $ ansible-playbook -i inventory deploy-k3s.yml -t k3s
 * `Ubuntu` 
 Setting the network with vmware_guest in Ubuntu 18.04 (and latest) is known to be broken, due to missing support for `netplan` in the `open-vm-tools`.   
 [https://docs.ansible.com/ansible/latest/scenario_guides/vmware_scenarios/vmware_troubleshooting.html](https://docs.ansible.com/ansible/latest/scenario_guides/vmware_scenarios/vmware_troubleshooting.html)    
+   
+# TO-DO
+* select option `reboot`   
+* update `readme.md`   
