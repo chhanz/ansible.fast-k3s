@@ -44,8 +44,8 @@ ansible_ssh_pass=password
 ansible_ssh_common_args="-o GlobalKnownHostsFile=/dev/null -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no"
 ```
    
-> Warning)    
-> ***if install k3s, system will rebooted.***   
+# Warning
+***if install k3s, system will rebooted.***   
    
 * deploy lab environment 'k3s'
 ```bash
